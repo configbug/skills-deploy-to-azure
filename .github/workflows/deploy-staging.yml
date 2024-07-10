@@ -70,6 +70,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       id-token: write
+      contents: read
     needs: Build-Docker-Image
     name: Deploy app container to Azure
     steps:
